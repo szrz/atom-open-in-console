@@ -24,6 +24,5 @@ module.exports =
 
 	# Call native/shell open item method for the given view.
 	openConsole: (target) ->
-		console.log @config, "aa", atom.config.get('open-in-console.consolePath')
 		path = target.querySelector('[data-path]').dataset.path
 		exec "cd \"#{path}\" && \"#{atom.config.get('open-in-console.consolePath')}"
