@@ -1,5 +1,6 @@
 {CompositeDisposable} = require 'atom'
 exec = require('child_process').exec
+fs = require 'fs'
 
 module.exports =
 	config:
@@ -25,4 +26,7 @@ module.exports =
 	# Call native/shell open item method for the given view.
 	openConsole: (target) ->
 		path = target.querySelector('[data-path]').dataset.path
+		isDir = fs.lstatSync(path).isDirectory()
+		if !isDir
+			path = path.split(/\\[^\\]*\.[A-Za-z0-9]*$/)
 		exec "cd \"#{path}\" && start #{atom.config.get('open-in-console.consolePath')}"
