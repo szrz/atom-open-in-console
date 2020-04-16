@@ -1,11 +1,11 @@
 {
   "name": "open-in-console",
-  "description": "atom.io extension which open directories within your git bash terminal",
+  "description": "Extension which open directories within your terminal (works only on Windows system)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/szrz/atom-open-in-console.git"
   },
-  "version": "0.0.0",
+  "version": "0.0.1",
   "activationCommands": {
     "atom-workspace": [
       "open-in-console:open"
