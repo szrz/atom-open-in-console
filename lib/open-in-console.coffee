@@ -28,5 +28,5 @@ module.exports =
 		path = target.querySelector('[data-path]').dataset.path
 		isDir = fs.lstatSync(path).isDirectory()
 		if !isDir
-			path = path.split(/\\[^\\]*\.[A-Za-z0-9]*$/)
+			path = path.split(/\\[^\\]*$/).join("\\")
 		exec "cd \"#{path}\" && start #{atom.config.get('open-in-console.consolePath')}"
