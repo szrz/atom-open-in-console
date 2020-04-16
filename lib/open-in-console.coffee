@@ -20,9 +20,6 @@ module.exports =
 		@disposables?.dispose()
 		@disposables = null
 
-	# Extract the path from the target: can be a tree-view or tab item.
-	getPath: (target) -> return target.getPath?() ? target.item?.getPath()
-
 	# Call native/shell open item method for the given view.
 	openConsole: (target) ->
 		path = target.querySelector('[data-path]').dataset.path
