@@ -5,7 +5,7 @@ module.exports =
 	config:
 		consolePath:
 			type: 'string'
-			default: 'C:\\Program Files\\Git\\git-bash.exe'
+			default: 'C:\\Windows\\System32\\cmd.exe'
 
 	# Register show and open
 	activate: ->
@@ -25,4 +25,4 @@ module.exports =
 	# Call native/shell open item method for the given view.
 	openConsole: (target) ->
 		path = target.querySelector('[data-path]').dataset.path
-		exec "cd \"#{path}\" && \"#{atom.config.get('open-in-console.consolePath')}"
+		exec "cd \"#{path}\" && start #{atom.config.get('open-in-console.consolePath')}"

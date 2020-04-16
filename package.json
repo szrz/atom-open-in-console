@@ -1,25 +1,30 @@
 {
-	"name": "open-in-console",
-	"description": "atom.io extension which open directories within your git bash terminal",
-	"repository": {
-      "type": "git",
-      "url": "git+https://github.com/szrz/atom-open-in-console.git"
-    },
-	"version": "0.0.0",
-  	"activationCommands": {
-		"atom-workspace": [
-			"open-in-console:open"
-		]
-	},
-	"bugs": {
-		"url": "https://github.com/szrz/atom-open-in-console/issues"
-	},
-	"bundleDependencies": false,
-	"deprecated": false,
-	"engines": {
-		"atom": ">=0.200.0 <2.0.0"
-	},
-	"homepage": "https://github.com/szrz/atom-open-in-console#readme",
-	"license": "MIT",
-	"main": "./lib/open-in-console"
+  "name": "open-in-console",
+  "description": "atom.io extension which open directories within your git bash terminal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szrz/atom-open-in-console.git"
+  },
+  "version": "0.0.0",
+  "activationCommands": {
+    "atom-workspace": [
+      "open-in-console:open"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/szrz/atom-open-in-console/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "engines": {
+    "atom": ">=0.200.0 <2.0.0"
+  },
+  "homepage": "https://github.com/szrz/atom-open-in-console#readme",
+  "license": "MIT",
+  "main": "./lib/open-in-console",
+  "apmInstallSource": {
+    "type": "git",
+    "source": "https://github.com/szrz/atom-open-in-console.git",
+    "sha": "e535d6079f6a7f2cca87b96dd98e50ca5c54896f"
+  }
 }
